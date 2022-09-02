@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-int main() {
-    char buffer[512];
+#define BUFFER_SIZE 512
 
-    fgets(buffer, 512, stdin);
+int main() {
+    char buffer[BUFFER_SIZE];
+
+    fgets(buffer, BUFFER_SIZE, stdin);
 
     printf("%s", buffer);
 
