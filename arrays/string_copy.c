@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
+#define BUF_SIZE 512
+
 int main() {
     char s1[] = "This is some random string.";
-    char buffer[512] = { 0 };
+    char buffer[BUF_SIZE] = { 0 };
 
     // Copy s1 to buffer
     strcpy(buffer, s1);
