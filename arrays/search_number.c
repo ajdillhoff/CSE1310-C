@@ -26,17 +26,21 @@ int find_value(int arr[], int size, int val) {
     return -1;
 }
 
+void print_array(int arr[], int size) {
+    printf("[%d, ", arr[0]);
+    for (int i = 1; i < size-1; i++) {
+        printf("%d, ", arr[i]);
+    }
+    printf("%d]\n", arr[size-1]);
+}
+
 int main() {
     int arr[10] = { 0 };
     int search_val = 0;
 
     random_fill(arr, 10, 0, 100);
 
-    printf("[%d, ", arr[0]);
-    for (int i = 0; i < 9; i++) {
-        printf("%d, ", arr[i]);
-    }
-    printf("%d]\n", arr[9]);
+    print_array(arr, 10);
 
     printf("Enter a search value: ");
     scanf("%d", &search_val);
