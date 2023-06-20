@@ -15,5 +15,17 @@ int main() {
             printf("%d\n", b * c);
     }
 
+    // The equivalent if-else statement
+    if (a == 5) {
+        // Do nothing
+    } else if (a == 10) {
+        printf("%d", a * c);
+        printf("%d", b - c);
+    } else if (a == 15) {
+        printf("%d", b - c);
+    } else {
+        printf("%d\n", b * c);
+    }
+
     return 0;
 }
