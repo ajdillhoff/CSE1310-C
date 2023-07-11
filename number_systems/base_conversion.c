@@ -48,9 +48,9 @@ char *to_base16(int num) {
     }
 
     // Reverse string
-    for (i = 0; i < strlen(str) - 1; i++) {
-        char temp = str[i + 1];
-        str[i + 1] = str[i];
+    for (int i = 0, j = strlen(str) - 1; i < strlen(str) / 2; i++, j--) {
+        char temp = str[j];
+        str[j] = str[i];
         str[i] = temp;
     }
 
@@ -64,7 +64,6 @@ int main(int argc, char **argv) {
     }
 
     int base = atoi(argv[2]);
-
 
     if (base == 10) {
         int num = atoi(argv[1]);
