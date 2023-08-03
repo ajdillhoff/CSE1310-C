@@ -25,5 +25,7 @@ int main() {
     printf("AC: %d\n", ac);
     printf("CR: %.1lf\n", cr);
 
+    fclose(fp);
+
     return 0;
 }
