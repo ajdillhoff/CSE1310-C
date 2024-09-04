@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int height = 0;
+    unsigned int height = 0;
 
     printf("Enter pyramid height: ");
-    scanf("%d", &height);
+    scanf("%u", &height);
 
     switch (height) {
         case 3:

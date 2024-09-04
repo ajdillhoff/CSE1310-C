@@ -1,11 +1,19 @@
+#define ZERO 0
 #include <stdio.h>
 
 int main() {
-    int i_val = 0;
-    long l_val = 0;
-    char c_val = 0;
-    float f_val = 0;
-    double d_val = 0;
+    int i_val = ZERO;
+    unsigned long l_val = ZERO;
+    char c_val = ZERO;
+    float f_val = ZERO;
+    double d_val = ZERO;
+
+    i_val += 10;
+    i_val = 10;
+    printf("i_val = %d\n", ++i_val);
+
+    printf("sizeof(short int) = %lu\n", sizeof(short int));
+    printf("sizeof(int) = %lu\nsizeof(long) = %lu\n", sizeof(int), sizeof(long));
 
     // Read an integer from the user
     printf("Enter an integer: ");
@@ -32,8 +40,8 @@ int main() {
     // Since the newline from the enter key is left in there, it will effectively skip our input.
     // This loop will flush the buffer so that the character can be read.
     // Comment this `while` loop out and recompile to see it in action.
-    while (getchar() != '\n');
-    scanf("%c", &c_val);
+    //while (getchar() != '\n');
+    scanf(" %c", &c_val);
 
     printf("You entered '%c'\n", c_val);
 

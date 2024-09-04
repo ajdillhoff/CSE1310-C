@@ -8,6 +8,7 @@ int main(void) {
     FILE *IFH = NULL;
     FILE *OFH = NULL;
 
+    // Prompt the user to enter a file name
     printf("Enter a filename: ");
     scanf("%s", infilename);
     IFH = fopen(infilename, "r+");
@@ -19,13 +20,11 @@ int main(void) {
 
     // Read the first line
     fscanf(IFH, "%s", outfilename);
-    // Read multiple values from the second line using fscanf
-    char str[20] = { 0 };
-    int ival = 0;
-    float fval = 0;
-    char cval = 0;
 
-    fscanf(IFH, "%s %d %f %c", str, &ival, &fval, &cval);
+    // Read multiple values from the second line using fscanf
+    int ival1 = 0, ival2 = 0, ival3 = 0;
+
+    fscanf(IFH, "%d %d %d", &ival1, &ival2, &ival3);
 
     // Close the output file
     fclose(IFH);
@@ -39,7 +38,7 @@ int main(void) {
     }
 
     // Use fprintf() to write to the file
-    fprintf(OFH, "%s %d %f %c\n", str, ival + 1, fval + 2, cval + 3);
+    fprintf(OFH, "%d %d %d\n", ival1 + 1, ival2 + 2, ival3 + 3);
 
     // Close the file
     fclose(OFH);

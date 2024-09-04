@@ -1,8 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    for (int i = 1; i < 10; ++i) {
-        printf("%d\n", i);
+    int count = 0;
+
+    int arr[10] = { 0 };
+
+    while (1) {
+        count++;
+        if (count % 2) {
+            continue;
+        }
+
+        printf("%d\n", count);
+
+        if (count == 100) break;
     }
 
     return 0;

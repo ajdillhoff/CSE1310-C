@@ -24,6 +24,8 @@ int main() {
         printf("Could not find \"%s\" in \"%s\"\n", str2, str1);
     } else {
         printf("Found \"%s\"\n", found);
+
+        printf("str1 = %p\nfound = %p\n", str1, found);
     }
 
     return 0;

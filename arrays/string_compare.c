@@ -11,6 +11,10 @@ int main() {
     fgets(buffer, 128, stdin);
     trim(buffer);
 
+    int result = strcmp(buffer, word);
+
+    printf("result = %d\n", result);
+
     if (strcmp(buffer, word)) {
         printf("These strings are different.\n");
     } else {

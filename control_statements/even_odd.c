@@ -15,5 +15,7 @@ int main() {
         printf("%d is odd.\n", input);
     }
 
+    int result = is_odd ? 10 : 20;
+
     return 0;
 }

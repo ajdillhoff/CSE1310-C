@@ -3,9 +3,9 @@
 #include <math.h>
 
 int main() {
-    int n = 123456789;
+    unsigned long n = 600851475143;
 
-    printf("The prime factorization of %d is...", n);
+    printf("The prime factorization of %lu is...", n);
 
     // If n is currently divisible by 2, factor by 2
     while (n % 2 == 0) {
@@ -14,15 +14,15 @@ int main() {
     }
 
     // n is guaranteed to be odd, skip even factors
-    for (int i = 3; i <= sqrt(n); i += 2){
+    for (unsigned long i = 3; i < n; i += 2){
         // Factor while i divides n
         while (n % i == 0) {
             n /= i;
-            printf("%d ", i);
+            printf("%lu ", i);
         }
     }
 
-    printf("%d!\n", n);
+    printf("%lu!\n", n);
 
     return 0;
 }

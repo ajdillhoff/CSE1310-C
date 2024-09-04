@@ -9,7 +9,8 @@ int main() {
       printf("E - Exit\n");
       printf("Enter your choice: ");
 
-      scanf("%c", &input);
+      scanf(" %c", &input);
+      printf("Input is %d\n", input);
       while (getchar() != '\n');
 
       switch (input) {

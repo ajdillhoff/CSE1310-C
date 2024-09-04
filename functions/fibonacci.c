@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int n = 10;
-    int t1 = 0, t2 = 1, temp = 0;
+    unsigned long n = 50;
+    unsigned long t1 = 0, t2 = 1, temp = 0;
 
-    for (int i = 1; i <= n; i++) {
-        printf("%d, ", t1);
+    for (unsigned long i = 1; i <= n; i++) {
+        printf("%ld, ", t1);
         temp = t1 + t2;
         t1 = t2;
         t2 = temp;

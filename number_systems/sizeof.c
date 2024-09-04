@@ -10,5 +10,11 @@ int main() {
     printf("sizeof(float) =  %ld\n", sizeof(float));
     printf("sizeof(double) = %ld\n", sizeof(double));
 
+    int number = 10;
+
+    unsigned long size = sizeof number;
+
+    printf("sizeof number is %ld\n", size);
+
     return 0;
 }

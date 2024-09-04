@@ -21,6 +21,8 @@ int insert(int value, int index, int arr[], int size) {
         arr[index] = value;
         return size + 1;
     }
+
+    return size;
 }
 
 int remove_val(int index, int arr[], int size) {
@@ -29,4 +31,12 @@ int remove_val(int index, int arr[], int size) {
     }
 
     return size - 1;
+}
+
+void print_array(int arr[], int size) {
+    printf("[");
+    for (int i = 0; i < size - 1; i++) {
+        printf("%d, ", arr[i]);
+    }
+    printf("%d]\n", arr[size - 1]);
 }

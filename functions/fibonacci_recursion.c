@@ -9,7 +9,7 @@ int fib(int n) {
 }
 
 int main() {
-    int n = 10;
+    int n = 50;
 
     for (int i = 0; i < n; i++) {
         printf("%d ", fib(i));

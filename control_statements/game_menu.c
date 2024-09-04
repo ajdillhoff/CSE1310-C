@@ -10,9 +10,9 @@ int main() {
     printf("Enter your choice: ");
 
     scanf("%c", &input);
-    scanf(" %c", &input2);
+    // scanf(" %c", &input2);
 
-    printf("decimal value of input 2 is %d\n", input2);
+    // printf("decimal value of input 2 is %d\n", input2);
     
     switch (input) {
         case 's':

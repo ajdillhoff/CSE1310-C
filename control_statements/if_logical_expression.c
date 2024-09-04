@@ -7,7 +7,7 @@ int main(int argc, char const *argv[]) {
     printf("Enter two numbers between %d and %d: ", lower, upper);
     int result = scanf("%d%d", &input1, &input2);
 
-    if (result != 2) {
+    if (result = 2) {
         printf("You did not enter two numbers.\n");
         return 1;
     }

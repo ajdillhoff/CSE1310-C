@@ -8,7 +8,7 @@ void process_array(int a[]) {
 }
 
 int main() {
-    int a[10] = { 0 };
+    int a[100000] = { 1, 2, 3, 4, 5 };
 
     printf("In main()...\n");
     printf("  sizeof(a) = %ld\n", sizeof(a));

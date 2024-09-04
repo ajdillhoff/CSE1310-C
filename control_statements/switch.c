@@ -1,17 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int a = 10, b = 5, c = 2;
+    int a = 5, b = 5, c = 2;
 
     switch (a) {
         case 5:
-            break;
+            printf("Hello\n");
         case 10:
             printf("%d\n", a * c);
-            break;
         case 15:
             printf("%d\n", b - c);
-            break;
         default:
             printf("%d\n", b * c);
     }

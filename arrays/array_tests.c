@@ -1,13 +1,6 @@
 #include "array_utils.h"
 #include <stdio.h>
 
-void print_array(int arr[], int size) {
-    printf("[");
-    for (int i = 0; i < size - 1; i++) {
-        printf("%d, ", arr[i]);
-    }
-    printf("%d]\n", arr[size - 1]);
-}
 
 int main() {
     int arr[MAX_SIZE] = { 1, 2, 3, 4, 5 };

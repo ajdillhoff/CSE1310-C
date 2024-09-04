@@ -7,6 +7,8 @@ int main() {
                 printf(" ");
             }
 
+            if (j == 8) continue;
+
             for (int k = 0; k < 5; k++) {
                 printf("*");
             }
